@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools >= 61.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cocosplit"          # Name of the package
+version = "0.3.2"           # Initial version
+requires-python = ">= 3.10"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
