@@ -24,10 +24,10 @@ def filter_images(images, annotations):
 
 
 parser = argparse.ArgumentParser(description='Splits COCO annotations file into training and test sets.')
-parser.add_argument('annotations', metavar='coco_annotations', type=str,
+parser.add_argument('annotations', metavar='source_coco_json_path', type=str,
                     help='Path to COCO annotations file.')
-parser.add_argument('train', type=str, help='Where to store COCO training annotations')
-parser.add_argument('test', type=str, help='Where to store COCO test annotations')
+parser.add_argument('train_coco_json_path', type=str, help='Where to store COCO training annotations')
+parser.add_argument('test_coco_json_path', type=str, help='Where to store COCO test annotations')
 parser.add_argument('-s', dest='split', type=float, required=True,
                     help="A percentage of a split; a number in (0, 1)")
 parser.add_argument('--having-annotations', dest='having_annotations', action='store_true',
