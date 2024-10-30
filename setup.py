@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 setup(
     name="cocosplit",
     version="0.2.0",
-    packages=find_packages(),  # Finds and includes all packages in `my_package`
+    packages=find_packages(), 
     entry_points={
         'console_scripts': [
-            'cocosplit=source.__main__:main',  # Creates `my-package` CLI command
+            'cocosplit=source.__main__:main',  
         ],
     },
-    python_requires='>=3.10',  # Specify the Python version compatibility
-    install_requires=[],  # List your package dependencies here
+    python_requires='>=3.10',  
+    install_requires=[], 
 )
