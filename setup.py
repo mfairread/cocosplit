@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),  # Finds and includes all packages in `my_package`
     entry_points={
         'console_scripts': [
-            'my-package=my_package.__main__:main',  # Creates `my-package` CLI command
+            'cocosplit=source.__main__:main',  # Creates `my-package` CLI command
         ],
     },
     python_requires='>=3.10',  # Specify the Python version compatibility
