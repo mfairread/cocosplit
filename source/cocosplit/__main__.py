@@ -85,8 +85,3 @@ def main(args):
             save_coco(args.test, info, licenses, X_test, anns_test, categories)
 
             print("Saved {} entries in {} and {} in {}".format(len(anns_train), args.train, len(anns_test), args.test))
-            
-
-
-if __name__ == "__main__":
-    main(args)
